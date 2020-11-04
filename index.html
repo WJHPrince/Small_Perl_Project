@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple HTML</title>
+</head>
+<body>
+<form action='./cgi-bin/Control.cgi' method='POST'>
+<br>
+Choose method:
+<select name='method'>
+	<option value='SELECT' selected>SELECT</option>
+	<option value='DELETE'>DELETE</option>
+	<option value='INSERT'>INSERT</option>
+	<option value='UPDATE'>ALTER</option>
+</select>
+<br>
+Choose a database:
+<br>
+<input type="radio" name='database' value='vms'> VMs
+<input type="radio" name='database' value='storage'> Storages
+<br>
+Name(must):<br>
+<input type="text" name="firstname">
+<br>
+Storage:<br>
+<input type="text" name="lastname">
+<br>
+Operatingsystem:<br>
+<input type="text" name="operatingsystem">
+<br>
+Size:<br>
+<input type='text' name='disksize'>
+<br>
+<br>
+<input type="submit" value="Submit">
+</form>
+
+</body>
+</html>

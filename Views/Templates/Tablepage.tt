@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Data</title>
+</head>
+<body>
+<h2>Here is data from your chosen file</h2>
+<br>
+<table border="1" bgcolor="#7fffd4">
+    <tr bgcolor="white">
+        [% FOREACH head IN headers %]
+        <th>[% head %]</th>
+        [% END %]
+    </tr>
+    <tr>
+        [% FOREACH row IN rows %]
+        [% FOREACH digit IN row %]
+        <td>[% digit %]</td>
+        [% END %]
+        [% END %]
+    </tr>
+</table>
+
+</body>
+</html>
