@@ -1,5 +1,5 @@
 # Introduction
-This is a ugly Perl program used to control and display database infomation via CGI.
+This is an ugly Perl program used to control and display database infomation via CGI.
 ## Dependence
 - DBI
 - DBD::Pg
